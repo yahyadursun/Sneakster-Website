@@ -1,4 +1,4 @@
-# Proje-1 - Online Shopping Site  [text](https://sneakster-frontend.vercel.app)
+# Proje-1 - [Sneakster - Online Shopping Site](https://sneakster-frontend.vercel.app)
 
 ## Project Overview
 This is a full-stack e-commerce application with separate frontend, admin panel, and backend services. The application allows users to browse products, add them to cart, and place orders, while administrators can manage products, orders, and users.

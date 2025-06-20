@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">');
+@import url('<link href=https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+a.active hr{
+    display: block;
+}
+*{
+    font-family: Outfit;
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+  }
+  .montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold ağırlık */
+  }
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .scrollbar-hidden ::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: gray lightgray;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+  @media(max-width:640px) {
+    a.active{
+      background-color:dimgray;
+      color: whitesmoke;
+    }
+  }
+  .funnel-sans {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .icon-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon-checkbox input {
+    display: none; /* Varsayılan checkbox'ı gizle */
+  }
+  
+  .icon-checkbox .checked {
+    display: none;
+    color: #3498db;
+  }
+  
+  .icon-checkbox input:checked ~ .unchecked {
+    display: none;
+  }
+  
+  .icon-checkbox input:checked ~ .checked {
+    display: inline;
+  }
+.swiper-pagination-bullet {
+  width: 18px; /* Belirteç genişliği */
+  height: 12px; /* Belirteç yüksekliği */
+  border-radius: 0; 
+  background-color: #f0f0f0; 
+  opacity: 0.5; 
+  transition: all 0.3s ease;
+}
+
+/* Aktif belirteç */
+.swiper-pagination-bullet-active {
+  background-color: #4c4c4c; /* Aktif olan belirtecin rengi */
+  opacity: 1; /* Aktif belirteç tam opak */
+  transform: scale(1.2); /* Aktif belirteci büyütmek için */
+}
+.custom-select {
+  appearance: auto !important;
+  background-color: white !important;
+  border: 1px solid #ddd !important;
+  padding: 10px 30px 10px 10px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.custom-select::after {
+  content: "▼" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  font-size: 24px !important;
+  color: #333 !important;
+  pointer-events: none !important;
+}
+
+.custom-select option:hover {
+  background-color: #e0e0e0 !important;
+  color: black !important;
+}
+
+.custom-select option:focus {
+  background-color: #e0e0e0 !important;
+  color: black !important;
+}
+
+/* Option öğesinin odaklandığında rengini değiştir */
+select option:focus {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.input-field::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+}
